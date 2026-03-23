@@ -59,7 +59,7 @@ valider.addEventListener('click', () => {
 
   contenu += "</ul>";
 
- contenu += "<a href='https://www.mozilla.org/fr/' target='_blank' rel='noopener noreferrer'>tu as tout tes document ? la suite c'est ici !</a>"
+ contenu += "<a href='https://localementmissionairedemetzlacontre.github.io/test1/' target='_blank' rel='noopener noreferrer'>tu as tout tes document ? la suite c'est ici !</a>"
 
   resultat.classList.add('resultat-documents');
   resultat.innerHTML = contenu;
