@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Neph tuto</title>
+</head>
+    <body>
+
+<fieldset class="choix">
+    <legend>tu viens d'où ?&nbsp;:</legend>
+
+    <div class="choix1">
+        <input type="radio" name="mi-pays" id="France">
+        <label for="France">France</label>
+    </div>
+    
+    <div class="separateur-epic">ou</div>
+
+    <div class="choix1">
+        <input type="radio" name="mi-pays" id="el-mundo">
+        <label for="el-mundo">un autre Pays incroyable !</label>
+    </div>    
+
+
+
+
+
+
+</fieldset>
+
+
+
+
+<fieldset class="choix">
+    <legend>Tu es adulte ? :</legend>
+
+    <div class="choix1">
+        <input type="radio" name="pegi18" id="majeur" value="Majeur">
+        <label for="majeur">Majeur</label>
+    </div>
+
+    <div class="pegi21-options" style="display:none; margin-left:20px;">
+        <div class="choix">
+            <input type="radio" name="pegi21" id="majeur-21up">
+            <label for="majeur-21up">de 21 ans ou +</label>
+        </div>
+
+        <div class="choix1">
+            <input type="radio" name="pegi21" id="majeur-21down">
+            <label for="majeur-21down">de 18 - 21 ans</label>
+        </div>
+    </div>
+
+    <div class="separateur-epic">ou</div>
+
+    <div class="choix1">
+        <input type="radio" name="pegi18" id="mineur" value="Mineur">
+        <label for="mineur">Mineur</label>
+    </div>
+</fieldset>
+
+
+
+
+
+
+<fieldset class="choix">
+    <legend>tu habite où ?&nbsp;:</legend>
+
+    <div class="choix1">
+        <input type="radio" name="MAISON" id="indépendant">
+        <label for="indépendant">Chez moi</label>
+    </div>    
+
+    <div class="separateur-epic">ou</div>
+
+    <div class="choix1">
+        <input type="radio" name="MAISON" id="dépendant">
+        <label for="dépendant">Chez mes parents / autres</label>
+    </div>
+    
+
+
+
+
+</fieldset>
+
+<button class="choix" id="valider">Valider</button>
+
+<div class="choix" id="resultat" style="margin-top:20px;"></div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+
