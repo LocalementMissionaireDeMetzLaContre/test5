@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="style.css">
+    <title>Neph tuto</title>
+</head>
+
+<body>
+
+<div class="titre">
+    <h1>ta situation face au NEPH</h1>
+</div>
+
+<!-- ORIGINE -->
+<fieldset class="choix">
+    <legend>tu viens d'où ? :</legend>
+
+    <label class="choix1">
+        <input type="radio" name="mi-pays" value="france">
+        France
+    </label>
+    
+    <div class="separateur-epic">ou</div>
+
+    <label class="choix1">
+        <input type="radio" name="mi-pays" value="autre">
+        Un autre pays incroyable !
+    </label>
+
+</fieldset>
+
+<!-- AGE -->
+<fieldset class="choix">
+    <legend>Tu es adulte ? :</legend>
+
+    <label class="choix1">
+        <input type="radio" name="pegi18" value="majeur">
+        Majeur
+    </label>
+
+    <div class="pegi21-options" style="display:none; margin-left:10px;">
+        
+        <label class="choix1">
+            <input type="radio" name="pegi21" value="21plus">
+            21 ans ou +
+        </label>
+
+        <label class="choix1">
+            <input type="radio" name="pegi21" value="18-21">
+            18 - 21 ans
+        </label>
+
+    </div>
+
+    <div class="separateur-epic">ou</div>
+
+    <label class="choix1">
+        <input type="radio" name="pegi18" value="mineur">
+        Mineur
+    </label>
+
+</fieldset>
+
+<!-- LOGEMENT -->
+<fieldset class="choix">
+    <legend>tu habites où ? :</legend>
+
+    <label class="choix1">
+        <input type="radio" name="maison" value="independant">
+        Chez moi
+    </label>
+
+    <div class="separateur-epic">ou</div>
+
+    <label class="choix1">
+        <input type="radio" name="maison" value="dependant">
+        Chez mes parents / autres
+    </label>
+
+</fieldset>
+
+<!-- BOUTON -->
+<button id="valider">Valider</button>
+
+<!-- RESULTAT -->
+<div id="resultat"></div>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
