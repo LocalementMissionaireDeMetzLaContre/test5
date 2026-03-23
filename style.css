@@ -1,0 +1,129 @@
+/* Base FULL écran propre */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100dvh; /* 🔥 mieux que 100vh */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Conteneur intelligent */
+body {
+    width: 100%;
+    max-width: 600px;
+    padding: clamp(10px, 3vw, 20px);
+    box-sizing: border-box;
+}
+
+/* Titre */
+.titre h1 {
+    font-size: clamp(1.6rem, 5vw, 2.3rem);
+    text-align: center;
+    margin: clamp(10px, 3vw, 20px) 0;
+}
+
+/* Bloc */
+.choix {
+    width: 100%;
+    margin-top: clamp(12px, 3vw, 20px);
+    border-radius: 12px;
+    padding: clamp(10px, 3vw, 15px);
+    border: 1px solid #ddd;
+}
+
+/* Options */
+.choix1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: clamp(14px, 4vw, 18px);
+    margin-top: 10px;
+    border-radius: 12px;
+    background: #f5f5f5;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+/* Responsive tap */
+.choix1:active {
+    transform: scale(0.98);
+}
+
+/* Sélection visible */
+.choix1:has(input:checked) {
+    background: rgb(17, 0, 255);
+    color: white;
+}
+
+/* Bouton */
+button {
+    width: 100%;
+    margin-top: clamp(20px, 5vw, 30px);
+    color: white;
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    background: rgb(17, 0, 255);
+    border-radius: 18px;
+    padding: clamp(16px, 4vw, 22px);
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Pression */
+button:active {
+    transform: scale(0.96);
+    background: red;
+    transition: none;
+}
+
+/* Résultat */
+#resultat {
+    width: 100%;
+    margin-top: clamp(20px, 5vw, 30px);
+    padding: clamp(12px, 3vw, 18px);
+    border-radius: 12px;
+    background: #f0fff0;
+}
+
+/* Images */
+.my-page img {
+    width: 100%;
+    height: auto;
+}
+
+/* Fix */
+#book {
+    width: 100%;
+    margin: 0;
+}
+
+/* Résultats */
+.resultat-documents {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    background-color: #f0fff0;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.resultat-documents h3 {
+    color: #2e7d32;
+    font-size: 1.2rem;
+}
+
+.resultat-documents ul {
+    margin-top: 10px;
+    padding-left: 18px;
+}
+
+.resultat-documents li {
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
